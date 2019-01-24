@@ -17,9 +17,9 @@ Flutter入门与实战随书源码
 
 
 # 图书封面
-<img width="300" height="580" src="https://raw.githubusercontent.com/kangshaojun/flutter-book/master/screenshots/book_cover.png"/>
+<img src="https://raw.githubusercontent.com/kangshaojun/flutter-book/master/screenshots/book_cover.png"/>
 
 # 图书海报
-<img width="300" height="560" src="https://raw.githubusercontent.com/kangshaojun/flutter-book/master/screenshots/book_ad.jpeg"/>
+<img src="https://raw.githubusercontent.com/kangshaojun/flutter-book/master/screenshots/book_ad.jpeg"/>
 
 
