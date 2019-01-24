@@ -25,7 +25,7 @@ class LayoutDemo extends StatelessWidget {
 void main() {
   runApp(
     new MaterialApp(
-      title: 'OverflowBox溢出父容器显示示例',
+      title: 'SizedBox设置具体尺寸示例',
       home: new LayoutDemo(),
     ),
   );
