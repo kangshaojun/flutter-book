@@ -15,9 +15,9 @@ Flutter入门与实战随书源码
 # 作者简介
 捷智云视频会议系统联合创始人，国内首本Flutter出版书籍作者，著有《Flutter技术入门与实战》。多年从事流媒体技术研发，对于Android，iOS等开发技术有比较深入的研究和应用，作为主要程序员开发了多个应用项目，涉及医疗、交通、银行等领域。
 
-Flutter技术入门与实战: http://product.dangdang.com/26485813.html 
-Flutter交流学习群：894109159
-Flutter开源项目请关注: https://github.com/kangshaojun
+Flutter技术入门与实战: http://product.dangdang.com/26485813.html  
+Flutter交流学习群：894109159  
+Flutter开源项目请关注: https://github.com/kangshaojun  
 Flutter视频教程：https://edu.csdn.net/lecturer/2436
 
 # 图书封面
