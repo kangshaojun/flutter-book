@@ -18,7 +18,10 @@ Flutter入门与实战随书源码
 Flutter技术入门与实战: http://product.dangdang.com/26485813.html  
 Flutter交流学习群：894109159  
 Flutter开源项目请关注: https://github.com/kangshaojun  
-Flutter视频教程：https://edu.csdn.net/lecturer/2436
+Flutter视频教程：https://webrtc.ke.qq.com/
+
+QQ:283796665
+微信:kangshaojun888
 
 # 图书封面
 <img src="https://raw.githubusercontent.com/kangshaojun/flutter-book/master/screenshots/book_cover.png"/>
