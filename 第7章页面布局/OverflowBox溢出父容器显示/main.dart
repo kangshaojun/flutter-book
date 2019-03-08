@@ -11,15 +11,15 @@ class LayoutDemo extends StatelessWidget {
           color: Colors.green,
           width: 200.0,
           height: 200.0,
-          padding: const EdgeInsets.all(5.0),
+          padding: const EdgeInsets.all(50.0),
           child: OverflowBox(
             alignment: Alignment.topLeft,
-            maxWidth: 300.0,
-            maxHeight: 500.0,
+            maxWidth: 400.0,
+            maxHeight: 400.0,
             child: Container(
               color: Colors.blueGrey,
-              width: 400.0,
-              height: 400.0,
+              width: 300.0,
+              height: 300.0,
             ),
           ),
         ));
@@ -34,3 +34,4 @@ void main() {
     ),
   );
 }
+
