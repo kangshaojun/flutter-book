@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(new MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -10,14 +10,18 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     final appName = '自定义主题';
 
-    return new MaterialApp(
+    return MaterialApp(
       title: appName,
-      theme: new ThemeData(
-        brightness: Brightness.light,//应用程序整体主题的亮度
-        primaryColor: Colors.lightGreen[600],//App主要部分的背景色
-        accentColor: Colors.orange[600],//前景色（文本、按钮等）
+      //主题配置
+      theme: ThemeData(
+        //应用程序整体主题的亮度
+        brightness: Brightness.light,
+        //App主要部分的背景色
+        primaryColor: Colors.lightGreen[600],
+        //前景色（文本、按钮等）
+        accentColor: Colors.orange[600],
       ),
-      home: new MyHomePage(
+      home: MyHomePage(
         title: appName,
       ),
     );
@@ -31,26 +35,27 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: new AppBar(
-        title: new Text(title),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(title),
       ),
-      body: new Center(
-        child: new Container(
+      body: Center(
+        child: Container(
           //获取主题的accentColor
           color: Theme.of(context).accentColor,
-          child: new Text(
+          child: Text(
             '带有背景颜色的文本组件',
+            //获取主题的文本样式
             style: Theme.of(context).textTheme.title,
           ),
         ),
       ),
-      floatingActionButton: new Theme(
+      floatingActionButton: Theme(
         //使用copyWith的方式获取accentColor
         data: Theme.of(context).copyWith(accentColor: Colors.grey),
-        child: new FloatingActionButton(
+        child: FloatingActionButton(
           onPressed: null,
-          child: new Icon(Icons.computer),
+          child: Icon(Icons.computer),
         ),
       ),
     );
