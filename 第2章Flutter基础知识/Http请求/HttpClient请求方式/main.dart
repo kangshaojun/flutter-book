@@ -6,15 +6,15 @@ void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
 
-  //获取天气数据
+  //获取天气数据 此方法需要异步执行async/await
   void getWeatherData() async {
     try {
       //实例化一个HttpClient对象
-      HttpClient httpClient = new HttpClient();
+      HttpClient httpClient = HttpClient();
 
-      //发起请求
+      //发起请求 (IP + PORT + 请求接口)
       HttpClientRequest request = await httpClient.getUrl(
-          Uri.parse("http://t.weather.sojson.com/api/weather/city/101030100"));
+          Uri.parse("http://127.0.0.1:3000/getHttpClientData"));
 
       //等待服务器返回数据
       HttpClientResponse response = await request.close();
@@ -37,14 +37,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'httpclient请求',
+      title: 'HttpClient请求',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('httpclient请求'),
+          title: Text('HttpClient请求'),
         ),
         body: Center(
           child: RaisedButton(
-            child: Text("获取天气数据"),
+            child: Text("发起HttpClient请求"),
             onPressed: getWeatherData,
           ),
         ),
