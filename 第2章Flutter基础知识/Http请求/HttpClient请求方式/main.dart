@@ -6,8 +6,8 @@ void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
 
-  //获取天气数据 此方法需要异步执行async/await
-  void getWeatherData() async {
+  //获取数据 此方法需要异步执行async/await
+  void getHttpClientData() async {
     try {
       //实例化一个HttpClient对象
       HttpClient httpClient = HttpClient();
@@ -45,7 +45,7 @@ class MyApp extends StatelessWidget {
         body: Center(
           child: RaisedButton(
             child: Text("发起HttpClient请求"),
-            onPressed: getWeatherData,
+            onPressed: getHttpClientData,
           ),
         ),
       ),
