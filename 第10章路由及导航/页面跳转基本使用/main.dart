@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(new MaterialApp(
+  runApp(MaterialApp(
     title: '导航页面示例',
     home: FirstScreen(),
   ));
 }
-
+//第一个页面
 class FirstScreen extends StatelessWidget {
 
   @override
@@ -19,7 +19,7 @@ class FirstScreen extends StatelessWidget {
         child: RaisedButton(
           child: Text('查看商品详情页面'),
           onPressed: (){
-            //压栈处理
+            //压栈处理 路由至第二个页面
             Navigator.push(context, MaterialPageRoute(builder: (context) => SecondScreen())
             );
           },
@@ -28,7 +28,7 @@ class FirstScreen extends StatelessWidget {
     );
   }
 }
-
+//第二个页面
 class SecondScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -40,7 +40,7 @@ class SecondScreen extends StatelessWidget {
       body: Center(
         child: RaisedButton(
           onPressed: (){
-            //出栈处理
+            //出栈处理 返回至上一个页面
             Navigator.pop(context);
           },
           child: Text('返回页面'),

@@ -62,7 +62,7 @@ class SecondPage extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: RaisedButton(
                 onPressed: () {
-                  //出栈带上参数
+                  //出栈带上参数 返回到上一个页面
                   Navigator.pop(context, 'hi google');
                 },
                 child: Text('hi google'),
@@ -72,7 +72,7 @@ class SecondPage extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: RaisedButton(
                 onPressed: () {
-                  //出栈带上参数
+                  //出栈带上参数 返回到上一个页面
                   Navigator.pop(context, 'hi flutter');
                 },
                 child: Text('hi flutter'),

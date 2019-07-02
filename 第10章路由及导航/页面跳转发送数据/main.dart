@@ -9,7 +9,7 @@ class Product {
 }
 
 void main() {
-  runApp(new MaterialApp(
+  runApp(MaterialApp(
     title: '传递数据示例',
     //商品列表
     home: ProductList(
@@ -43,7 +43,7 @@ class ProductList extends StatelessWidget {
               //点击跳转至商品详情页 传入Product对象
               onTap: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) =>
-                      ProductDetail(product: products[index])),
+                    ProductDetail(product: products[index])),
                 );
               },
             );
@@ -64,10 +64,12 @@ class ProductDetail extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        //展示数据
         title: Text("${product.title}"),
       ),
       body: Padding(
         padding: EdgeInsets.all(16.0),
+        //展示数据
         child: Text('${product.description}'),
       ),
     );
