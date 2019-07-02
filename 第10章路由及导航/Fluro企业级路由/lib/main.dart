@@ -4,7 +4,6 @@ import 'package:fluro/fluro.dart';
 import './routers/application.dart';
 import './pages/first_page.dart';
 
-//https://blog.csdn.net/baidu_32377671/article/details/83788125
 
 void main() {
   runApp(MyApp());
