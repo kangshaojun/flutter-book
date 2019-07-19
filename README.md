@@ -1,5 +1,4 @@
 # flutter-book
-Flutter入门与实战的随书源码
 Flutter从入门到精通视频教程：https://ke.qq.com/course/package/16132?tuin=10ea64b9
 
 # 如何使用
