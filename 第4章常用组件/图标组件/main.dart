@@ -1,24 +1,28 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(
-  new MaterialApp(
-    title: '图标组件示例',
-    home: new LayoutDemo(),
-  ),
-);
-
-class LayoutDemo extends StatelessWidget {
-
-
-  @override
-  Widget build(BuildContext context) {
-
-    return new Scaffold(
-      appBar: new AppBar(
-        title: new Text('图标组件示例'),
+      MaterialApp(
+        title: '图标组件示例',
+        home: LayoutDemo(),
       ),
-      body: new Icon(Icons.phone,color: Colors.green[500],size: 80.0,),
     );
 
+class LayoutDemo extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('图标组件示例'),
+      ),
+      //添加图标
+      body: Icon(
+        //图标内容
+        Icons.phone,
+        //图标颜色
+        color: Colors.green[500],
+        //图标大小
+        size: 80.0,
+      ),
+    );
   }
 }

@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(new MyApp());
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  
+
   @override
   Widget build(BuildContext context) {
     final title = "网格列表示例";
 
-    return new MaterialApp(
+    return MaterialApp(
       title: title,
-      home: new Scaffold(
-        appBar: new AppBar(
-          title: new Text(title),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text(title),
         ),
         //使用GridView.count构建网格
-        body: new GridView.count(
+        body: GridView.count(
           primary: false,
           //四周增加一定的空隙
           padding: const EdgeInsets.all(20.0),

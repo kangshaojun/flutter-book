@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
@@ -16,9 +15,10 @@ class MyApp extends StatelessWidget {
           title: Text(title),
         ),
         //添加基础列表
-        body: new ListView(
+        body: ListView(
           //添加静态数据
           children: <Widget>[
+            //ListTile是一种相对固定样式的列表项 比如微信的"发现"页面
             ListTile(
               //添加图标
               leading: Icon(Icons.alarm),
@@ -68,7 +68,6 @@ class MyApp extends StatelessWidget {
           ],
         ),
       ),
-
     );
   }
 }

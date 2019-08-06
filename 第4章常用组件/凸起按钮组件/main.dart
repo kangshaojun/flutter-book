@@ -1,22 +1,25 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(new MyApp());
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
+    return MaterialApp(
       title: 'RaisedButton示例',
-      home: new Scaffold(
-        appBar: new AppBar(
-          title: new Text('RaisedButton组件示例'),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('RaisedButton组件示例'),
         ),
-        body: new Center(
-          child: new RaisedButton(
+        body: Center(
+          //RaisedButton具有一种立体感
+          child: RaisedButton(
+            //按下事件响应
             onPressed: () {
               //按下事件处理
             },
-            child: new Text('RaisedButton组件'),
+            //添加按钮文本
+            child: Text('RaisedButton组件'),
           ),
         ),
       ),

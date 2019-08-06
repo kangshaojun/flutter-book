@@ -1,20 +1,19 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(new LoginPage());
+void main() => runApp(LoginPage());
 
 class LoginPage extends StatefulWidget {
   @override
-  _LoginPageState createState() => new _LoginPageState();
+  _LoginPageState createState() => _LoginPageState();
 }
 
 class _LoginPageState extends State<LoginPage> {
 
   //全局Key用来获取Form表单组件
-  GlobalKey<FormState> loginKey = new GlobalKey<FormState>();
+  GlobalKey<FormState> loginKey = GlobalKey<FormState>();
 
   //用户名
   String userName;
-
   //密码
   String password;
 
@@ -31,34 +30,36 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
-      title: 'Form表单示例',
-      home: new Scaffold(
-        appBar: new AppBar(
-          title: new Text('Form表单示例'),
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Form表单示例'),
         ),
-        body: new Column(
+        body: Column(
           children: <Widget>[
-            new Container(
+            Container(
+              //添加内边距
               padding: const EdgeInsets.all(16.0),
-              child: new Form(
+              //添加Form表单
+              child: Form(
                 key: loginKey,
-                child: new Column(
+                child: Column(
                   children: <Widget>[
-                    new TextFormField(
-
-                      decoration: new InputDecoration(
+                    //文本输入框表单组件
+                    TextFormField(
+                      //装饰器
+                      decoration: InputDecoration(
+                        //提示文本
                         labelText: '请输入用户名',
                       ),
+                      //接收输入值
                       onSaved: (value) {
                         userName = value;
                       },
-                      onFieldSubmitted: (value){
-
-                      },
+                      onFieldSubmitted: (value){},
                     ),
-                    new TextFormField(
-                      decoration: new InputDecoration(
+                    TextFormField(
+                      decoration: InputDecoration(
                         labelText: '请输入密码',
                       ),
                       obscureText: true,
@@ -74,13 +75,15 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ),
             ),
-            new SizedBox(
+            //限定容器大小
+            SizedBox(
               width: 340.0,
               height: 42.0,
-              child: new RaisedButton(
+              //添加登录按钮
+              child: RaisedButton(
                 onPressed: login,
-                child: new Text(
-                    '登录',
+                child: Text(
+                  '登录',
                   style: TextStyle(
                     fontSize: 18.0,
                   ),
