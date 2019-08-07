@@ -29,8 +29,9 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatelessWidget {
+  //标题
   final String title;
-
+  //接收title值 key为widget的唯一标识
   MyHomePage({Key key, @required this.title}) : super(key: key);
 
   @override

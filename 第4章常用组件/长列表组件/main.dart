@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
   //列表数据集
   final List<String> items;
 
+  //构造方法用于接收列表数据集
   MyApp({Key key, @required this.items}) : super(key: key);
 
   @override
@@ -18,19 +19,22 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       title: title,
-      home: new Scaffold(
-        appBar: new AppBar(
-          title: new Text(title),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text(title),
         ),
         //使用ListView.builder来构造列表项
-        body: new ListView.builder(
+        body: ListView.builder(
           //列表长度
           itemCount: items.length,
-          //列表项构造器
+          //列表项构造器 context为上下文 index表示列表项索引
           itemBuilder: (context,index) {
-            return new ListTile(
-              leading: new Icon(Icons.phone),
-              title: new Text('${items[index]}'),
+            //返回列表项
+            return ListTile(
+              //左侧图标
+              leading: Icon(Icons.phone),
+              //文本内容
+              title: Text('${items[index]}'),
             );
           },
         ),
