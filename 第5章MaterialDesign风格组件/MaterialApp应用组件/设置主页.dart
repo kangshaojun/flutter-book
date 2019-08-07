@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(new MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
   //这是整个应用的主组件
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
-      home: new MyHomePage(),
+    //Material风格应用
+    return MaterialApp(
+      //设置首页
+      home: MyHomePage(),
       title: 'MaterialApp示例',
     );
   }
@@ -18,14 +20,14 @@ class MyApp extends StatelessWidget {
 //这是一个可改变的Widget
 class MyHomePage extends StatefulWidget {
   @override
-  _MyHomePageState createState() => new _MyHomePageState();
+  _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: new AppBar(
+    return Scaffold(
+      appBar: AppBar(
         title: Text('MaterialApp示例'),
       ),
       body: Center(

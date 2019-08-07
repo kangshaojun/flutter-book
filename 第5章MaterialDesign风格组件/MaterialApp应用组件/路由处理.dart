@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(new MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
   //这是整个应用的主组件
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
-      home: new MyHomePage(),
+    return MaterialApp(
+      home: MyHomePage(),
       title: 'MaterialApp示例',
+      //路由配置
       routes: {
         '/first': (BuildContext context) => FirstPage(), //添加路由
         '/second': (BuildContext context) => SecondPage(),
@@ -23,14 +24,14 @@ class MyApp extends StatelessWidget {
 //这是一个可改变的Widget
 class MyHomePage extends StatefulWidget {
   @override
-  _MyHomePageState createState() => new _MyHomePageState();
+  _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: new AppBar(
+    return Scaffold(
+      appBar: AppBar(
         title: Text('MaterialApp示例'),
       ),
       body: Center(
@@ -47,8 +48,8 @@ class _MyHomePageState extends State<MyHomePage> {
 class FirstPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: new AppBar(
+    return Scaffold(
+      appBar: AppBar(
         title: Text('这是第一页'),
       ),
       body: Center(
@@ -71,8 +72,8 @@ class FirstPage extends StatelessWidget {
 class SecondPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: new AppBar(
+    return Scaffold(
+      appBar: AppBar(
         title: Text('这是第二页'),
       ),
       body: Center(

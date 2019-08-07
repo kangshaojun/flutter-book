@@ -3,29 +3,32 @@ import 'package:flutter/material.dart';
 class TabBarSample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
+    return MaterialApp(
       //添加DefaultTabController关联TabBar及TabBarView
-      home: new DefaultTabController(
+      home: DefaultTabController(
         length: items.length,//传入选项卡数量
-        child: new Scaffold(
-          appBar: new AppBar(
+        child: Scaffold(
+          appBar: AppBar(
             title: const Text('TabBar选项卡示例'),
-            bottom: new TabBar(
+            //选项卡按钮
+            bottom: TabBar(
               isScrollable: true,//设置为可以滚动
-              tabs: items.map((ItemView item) {//迭代添加选项卡子项
-                return new Tab(
+              tabs: items.map((ItemView item) {//迭代添加选项卡按钮子项
+                //选项卡按钮由文本及图标组成
+                return Tab(
                   text: item.title,
-                  icon: new Icon(item.icon),
+                  icon: Icon(item.icon),
                 );
               }).toList(),
             ),
           ),
           //添加选项卡视图
-          body: new TabBarView(
-            children: items.map((ItemView item) {//迭代显示选项卡视图
-              return new Padding(
+          body: TabBarView(
+            //迭代显示选项卡视图
+            children: items.map((ItemView item) {
+              return Padding(
                 padding: const EdgeInsets.all(16.0),
-                child: new SelectedView(item: item),
+                child: SelectedView(item: item),
               );
             }).toList(),
           ),
@@ -37,7 +40,7 @@ class TabBarSample extends StatelessWidget {
 
 //视图项数据
 class ItemView {
-  const ItemView({ this.title, this.icon });//构造方法
+  const ItemView({ this.title, this.icon });//构造方法 传入标题及图标
   final String title;//标题
   final IconData icon;//图标
 }
@@ -61,16 +64,19 @@ class SelectedView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //获取文本主题样式
     final TextStyle textStyle = Theme.of(context).textTheme.display1;
-    return new Card(
+    //添加卡片组件 展示有质感
+    return Card(
+      //卡片颜色
       color: Colors.white,
-      child: new Center(
-        child: new Column(
+      child: Center(
+        child: Column(
           mainAxisSize: MainAxisSize.min,//垂直方向最小化处理
           crossAxisAlignment: CrossAxisAlignment.center,//水平方向居中对齐
           children: <Widget>[
-            new Icon(item.icon, size: 128.0, color: textStyle.color),
-            new Text(item.title, style: textStyle),
+            Icon(item.icon, size: 128.0, color: textStyle.color),
+            Text(item.title, style: textStyle),
           ],
         ),
       ),
@@ -79,7 +85,5 @@ class SelectedView extends StatelessWidget {
 }
 
 void main() {
-  runApp(new TabBarSample());
+  runApp(TabBarSample());
 }
-
-

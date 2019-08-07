@@ -21,7 +21,9 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _selectedIndex = 1;//当前选中项的索引
+  //当前选中项的索引
+  int _selectedIndex = 1;
+  //导航栏按钮选中对应数据
   final _widgetOptions = [
     Text('Index 0: 信息'),
     Text('Index 1: 通讯录'),
@@ -31,15 +33,18 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      //顶部应用按钮
       appBar: AppBar(
         title: Text('BottomNavigationBar示例'),
       ),
+      //中间内容显示区域
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),//居中显示某一个文本
       ),
-      //底部导航按钮 包含图标及文本
+      //底部导航按钮集
       bottomNavigationBar: BottomNavigationBar(
         items: <BottomNavigationBarItem>[
+          //底部导航按钮项 包含图标及文本
           BottomNavigationBarItem(icon: Icon(Icons.chat), title: Text('信息')),
           BottomNavigationBarItem(icon: Icon(Icons.contacts), title: Text('通讯录')),
           BottomNavigationBarItem(icon: Icon(Icons.account_circle), title: Text('发现')),

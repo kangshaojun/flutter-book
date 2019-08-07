@@ -12,10 +12,12 @@ class MyApp extends StatelessWidget {
           title: Text('AlertDialog组件示例'),
         ),
         body: Center(
+          //添加对话框
           child: AlertDialog(
-            title: Text('提示'), //对话框标题
+            //对话框标题
+            title: Text('提示'),
+            //对话框内容部分
             content: SingleChildScrollView(
-              //对话框内容部分
               child: ListBody(
                 children: <Widget>[
                   Text('是否要删除?'),
@@ -23,6 +25,7 @@ class MyApp extends StatelessWidget {
                 ],
               ),
             ),
+            //对话框操作按钮
             actions: <Widget>[
               FlatButton(
                 child: Text('确定'),

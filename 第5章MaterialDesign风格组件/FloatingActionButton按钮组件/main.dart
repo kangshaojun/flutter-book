@@ -17,8 +17,8 @@ class MyApp extends StatelessWidget {
             style: TextStyle(fontSize: 28.0),
           ),
         ),
-        floatingActionButton: new Builder(builder: (BuildContext context) {
-          return new FloatingActionButton(
+        floatingActionButton: Builder(builder: (BuildContext context) {
+          return FloatingActionButton(
             child: const Icon(Icons.add),
             //提示信息
             tooltip: "请点击FloatingActionButton",
@@ -32,13 +32,13 @@ class MyApp extends StatelessWidget {
             highlightElevation: 14.0,
             onPressed: () {
               //点击回调事件 弹出一句提示语句
-              Scaffold.of(context).showSnackBar(new SnackBar(
-                content: new Text("你点击了FloatingActionButton"),
+              Scaffold.of(context).showSnackBar(SnackBar(
+                content: Text("你点击了FloatingActionButton"),
               ));
             },
             mini: false,
             //圆形边
-            shape: new CircleBorder(),
+            shape: CircleBorder(),
             isExtended: false,
           );
         }),

@@ -6,7 +6,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Welcome to Flutter',
+      title: 'SnackBar示例',
       home: Scaffold(
         appBar: AppBar(
           title: Text('SnackBar示例'),
@@ -17,16 +17,18 @@ class MyApp extends StatelessWidget {
             style: TextStyle(fontSize: 28.0),
           ),
         ),
-        floatingActionButton: new Builder(builder: (BuildContext context) {
-          return new FloatingActionButton(
+        //FAB按钮
+        floatingActionButton: Builder(builder: (BuildContext context) {
+          return FloatingActionButton(
             child: const Icon(Icons.add),
             onPressed: () {
               //点击回调事件 弹出一句提示语句
-              Scaffold.of(context).showSnackBar(new SnackBar(
-                content: new Text("显示SnackBar"),
+              Scaffold.of(context).showSnackBar(SnackBar(
+                //提示信息内容部分
+                content: Text("显示SnackBar"),
               ));
             },
-            shape: new CircleBorder(),
+            shape: CircleBorder(),
           );
         }),
         floatingActionButtonLocation:
