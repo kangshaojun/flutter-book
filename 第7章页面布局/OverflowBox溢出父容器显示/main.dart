@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 class LayoutDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-        appBar: new AppBar(
-          title: new Text('OverflowBox溢出父容器显示示例'),
+    return Scaffold(
+        appBar: AppBar(
+          title: Text('OverflowBox溢出父容器显示示例'),
         ),
         body: Container(
           color: Colors.green,
@@ -28,10 +28,9 @@ class LayoutDemo extends StatelessWidget {
 
 void main() {
   runApp(
-    new MaterialApp(
+    MaterialApp(
       title: 'OverflowBox溢出父容器显示示例',
-      home: new LayoutDemo(),
+      home: LayoutDemo(),
     ),
   );
 }
-

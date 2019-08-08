@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(new MaterialApp(
+  runApp(MaterialApp(
     title: 'IndexedStack布局示例',
-    home: new MyApp(),
+    home: MyApp(),
   ));
 }
 
@@ -11,21 +11,23 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    var stack = new IndexedStack(
+    var stack = IndexedStack(
       index: 1,//设置索引为1就只显示文本内容了
       alignment: const FractionalOffset(0.2, 0.2),
       children: <Widget>[
-        new CircleAvatar(
+        //索引为0
+        CircleAvatar(
           backgroundImage: new AssetImage('images/1.jpeg'),
           radius: 100.0,
         ),
-        new Container(
-          decoration: new BoxDecoration(
+        //索引为1
+        Container(
+          decoration: BoxDecoration(
             color: Colors.black38,
           ),
-          child: new Text(
+          child: Text(
             '我是超级飞侠',
-            style: new TextStyle(
+            style: TextStyle(
               fontSize: 22.0,
               fontWeight: FontWeight.bold,
               color: Colors.white,
@@ -34,16 +36,13 @@ class MyApp extends StatelessWidget {
         ),
       ],
     );
-
-
-    return new Scaffold(
-      appBar: new AppBar(
-        title: new Text('Stack层叠布局示例'),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Stack层叠布局示例'),
       ),
-      body: new Center(
+      body: Center(
         child: stack,
       ),
     );
   }
 }
-

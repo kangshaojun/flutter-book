@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(
-  new MaterialApp(
+  MaterialApp(
     title: '水平布局示例',
-    home: new LayoutDemo(),
+    home: LayoutDemo(),
   ),
 );
 
@@ -11,21 +11,22 @@ class LayoutDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
-    return new Scaffold(
-      appBar: new AppBar(
-        title: new Text('水平布局示例'),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('水平布局示例'),
       ),
-      body: new Row(
+      //水平布局
+      body: Row(
         children: <Widget>[
-          new Expanded(
-            child: new Text('左侧文本', textAlign: TextAlign.center),
+          Expanded(
+            child: Text('左侧文本', textAlign: TextAlign.center),
           ),
-          new Expanded(
-            child: new Text('中间文本', textAlign: TextAlign.center),
+          Expanded(
+            child: Text('中间文本', textAlign: TextAlign.center),
           ),
-          new Expanded(
-            child: new FittedBox(
+          //右侧图标
+          Expanded(
+            child: FittedBox(
               fit: BoxFit.contain,
               child: const FlutterLogo(),
             ),
@@ -33,6 +34,5 @@ class LayoutDemo extends StatelessWidget {
         ],
       ),
     );
-
   }
 }

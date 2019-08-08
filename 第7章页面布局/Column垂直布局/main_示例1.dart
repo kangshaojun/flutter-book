@@ -1,28 +1,27 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(
-  new MaterialApp(
+  MaterialApp(
     title: '水平布局示例',
-    home: new LayoutDemo(),
+    home: LayoutDemo(),
   ),
 );
 
 class LayoutDemo extends StatelessWidget {
-
-
   @override
   Widget build(BuildContext context) {
-
-    return new Scaffold(
-      appBar: new AppBar(
-        title: new Text('垂直布局示例一'),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('垂直布局示例一'),
       ),
-      body: new Column(
+      //垂直布局
+      body: Column(
         children: <Widget>[
-          new Text('Flutter'),
-          new Text('垂直布局'),
-          new Expanded(
-            child: new FittedBox(
+          Text('Flutter'),
+          Text('垂直布局'),
+          //添加图标
+          Expanded(
+            child: FittedBox(
               fit: BoxFit.contain,
               child: const FlutterLogo(),
             ),
