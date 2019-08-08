@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
           title: Text('CupertinoAlertDialog组件示例'),
         ),
         body: Center(
+          //添加对话框
           child: CupertinoAlertDialog(
             title: Text('提示'), //对话框标题
             content: SingleChildScrollView(
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
                 ],
               ),
             ),
+            //对话框动作按钮
             actions: <Widget>[
               CupertinoDialogAction(
                 child: Text('确定'),
@@ -40,4 +42,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-

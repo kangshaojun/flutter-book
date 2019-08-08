@@ -13,12 +13,13 @@ class MyApp extends StatelessWidget {
           title: Text('CupertinoButton组件示例'),
         ),
         body: Center(
+          //Cupertino风格按钮
           child: CupertinoButton(
-              child: Text(//按钮label
-                'CupertinoButton',
-              ),
-              color: Colors.blue,//按钮颜色
-              onPressed: (){},//按下事件回调
+            child: Text(//按钮label
+              'CupertinoButton',
+            ),
+            color: Colors.blue,//按钮颜色
+            onPressed: (){},//按下事件回调
           ),
         ),
       ),
