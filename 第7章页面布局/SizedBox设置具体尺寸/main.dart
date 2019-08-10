@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 class LayoutDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: new AppBar(
-        title: new Text('SizedBox设置具体尺寸示例'),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('SizedBox设置具体尺寸示例'),
       ),
       body: SizedBox(
         //固定宽为200.0 高为300.0
@@ -16,17 +16,17 @@ class LayoutDemo extends StatelessWidget {
               style: TextStyle(
                 fontSize: 36.0,
               ),
-            )),
+            ),
+        ),
       ),
     );
   }
 }
-
 void main() {
   runApp(
-    new MaterialApp(
+    MaterialApp(
       title: 'SizedBox设置具体尺寸示例',
-      home: new LayoutDemo(),
+      home: LayoutDemo(),
     ),
   );
 }

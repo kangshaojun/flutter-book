@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 class LayoutDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-        appBar: new AppBar(
-          title: new Text('LimitedBox限定宽高布局示例'),
+    return Scaffold(
+        appBar: AppBar(
+          title: Text('LimitedBox限定宽高布局示例'),
         ),
         body: Row(
           children: <Widget>[
@@ -27,9 +27,9 @@ class LayoutDemo extends StatelessWidget {
 }
 void main() {
   runApp(
-    new MaterialApp(
+    MaterialApp(
       title: 'LimitedBox限定宽高布局示例',
-      home: new LayoutDemo(),
+      home: LayoutDemo(),
     ),
   );
 }

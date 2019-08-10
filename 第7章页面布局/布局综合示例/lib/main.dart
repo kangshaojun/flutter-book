@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(new MyApp());
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
@@ -8,11 +8,13 @@ class MyApp extends StatelessWidget {
     //风景区地址部分
     Widget addressContainer = Container(
       padding: const EdgeInsets.all(32.0),//此部分四周间隔一定距离
+      //水平布局
       child: Row(
         children: <Widget>[
           Expanded(
+            //垂直布局
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start, //顶部对齐
+              crossAxisAlignment: CrossAxisAlignment.start, //次轴即水平方向左侧对齐
               children: <Widget>[
                 Container(
                   padding: const EdgeInsets.only(bottom: 8.0),//与下面文本间隔一定距离
@@ -32,6 +34,7 @@ class MyApp extends StatelessWidget {
               ],
             ),
           ),
+          //图标
           Icon(
             Icons.star,
             color: Colors.red[500],
@@ -43,14 +46,17 @@ class MyApp extends StatelessWidget {
 
     //构建按钮组中单个按钮 参数为图标及文本
     Column buildButtonColumn(IconData icon, String label) {
+      //垂直布局
       return Column(
         mainAxisSize: MainAxisSize.min,//垂直方向大小最小化
         mainAxisAlignment: MainAxisAlignment.center,//垂直方向居中对齐
         children: <Widget>[
           Icon(icon, color: Colors.lightGreen[600]),//上面图标部分
           Container(
+            //距离上面图标一定间距
             margin: const EdgeInsets.only(top: 8.0),
-            child: Text(//下面文本部分
+            //下面文本部分
+            child: Text(
               label,
               style: TextStyle(
                 fontSize: 12.0,
@@ -65,7 +71,7 @@ class MyApp extends StatelessWidget {
 
     //按钮组部分
     Widget buttonsContainer = Container(
-      //容器横向布局
+      //水平布局
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,//水平方向均匀排列每个元素
         children: <Widget>[
@@ -78,6 +84,7 @@ class MyApp extends StatelessWidget {
 
     //风景区介绍文本部分
     Widget textContainer = Container(
+      //设置上下左右内边距
       padding: const EdgeInsets.all(32.0),
       //文本块一定是用'''来引用起来
       child: Text(
@@ -92,23 +99,26 @@ class MyApp extends StatelessWidget {
       ),
     );
 
-    return new MaterialApp(
+    return MaterialApp(
       title: '布局综合示例',
       //自定义主题，主体颜色为绿色风格
-      theme: new ThemeData(
+      theme: ThemeData(
         brightness: Brightness.light, //应用程序整体主题的亮度
         primaryColor: Colors.lightGreen[600], //App主要部分的背景色
         accentColor: Colors.orange[600], //前景色（文本、按钮等）
       ),
       home: Scaffold(
         appBar: AppBar(
+          //页面标题
           title: Text(
             '武当山风景区',
             style: TextStyle(color: Colors.white),
           ),
         ),
+        //使用列表视图默认为垂直布局,并且子元素能够上下滚动
         body: ListView(
           children: <Widget>[
+            //风景图片
             Image.asset(
               'images/wudang.jpeg',
               width: 600.0,

@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 class LayoutDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: new AppBar(
-        title: new Text('AspectRatio调整宽高比示例'),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('AspectRatio调整宽高比示例'),
       ),
-      body: new Container(
+      body: Container(
         height: 200.0,
-        child: new AspectRatio(
+        child: AspectRatio(
           aspectRatio: 1.5,//比例可以调整
-          child: new Container(
+          child: Container(
             color: Colors.green,
           ),
         ),
@@ -20,9 +20,9 @@ class LayoutDemo extends StatelessWidget {
 }
 void main() {
   runApp(
-    new MaterialApp(
+    MaterialApp(
       title: 'AspectRatio调整宽高比',
-      home: new LayoutDemo(),
+      home: LayoutDemo(),
     ),
   );
 }

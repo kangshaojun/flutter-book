@@ -1,43 +1,44 @@
 import 'package:flutter/material.dart';
+
 class LayoutDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: new AppBar(
-        title: new Text('Baseline基准线布局示例'),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Baseline基准线布局示例'),
       ),
-      body: new Row(
+      body: Row(
         //水平等间距排列子组件
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           //设置基准线
-          new Baseline(
+          Baseline(
             baseline: 80.0,
             //对齐字符底部水平线
             baselineType: TextBaseline.alphabetic,
-            child: new Text(
+            child: Text(
               'AaBbCc',
-              style: new TextStyle(
+              style: TextStyle(
                 fontSize: 18.0,
                 textBaseline: TextBaseline.alphabetic,
               ),
             ),
           ),
-          new Baseline(
+          Baseline(
             baseline: 80.0,
             baselineType: TextBaseline.alphabetic,
-            child: new Container(
+            child: Container(
               width: 40.0,
               height: 40.0,
               color: Colors.green,
             ),
           ),
-          new Baseline(
+          Baseline(
             baseline: 80.0,
             baselineType: TextBaseline.alphabetic,
-            child: new Text(
+            child: Text(
               'DdEeFf',
-              style: new TextStyle(
+              style: TextStyle(
                 fontSize: 26.0,
                 textBaseline: TextBaseline.alphabetic,
               ),
@@ -50,9 +51,9 @@ class LayoutDemo extends StatelessWidget {
 }
 void main() {
   runApp(
-    new MaterialApp(
+    MaterialApp(
       title: 'Baseline基准线布局示例',
-      home: new LayoutDemo(),
+      home: LayoutDemo(),
     ),
   );
 }

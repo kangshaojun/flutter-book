@@ -1,24 +1,26 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(new MaterialApp(
+  runApp(MaterialApp(
     title: 'Table表格布局示例',
-    home: new MyApp(),
+    home: MyApp(),
   ));
 }
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-
-    return new Scaffold(
-      appBar: new AppBar(
-        title: new Text('Table表格布局示例'),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Table表格布局示例'),
       ),
-      body: new Center(
+      //表格居中
+      body: Center(
+        //添加表格
         child: Table(
           //设置表格有多少列,并且指定列宽
           columnWidths: const <int, TableColumnWidth>{
+            //指定索引及固定列宽
             0: FixedColumnWidth(100.0),
             1: FixedColumnWidth(40.0),
             2: FixedColumnWidth(80.0),
@@ -60,4 +62,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
