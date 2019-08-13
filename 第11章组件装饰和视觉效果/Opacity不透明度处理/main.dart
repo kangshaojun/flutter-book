@@ -3,17 +3,18 @@ import 'package:flutter/material.dart';
 class LayoutDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: new AppBar(
-        title: new Text('Opacity不透明度示例'),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Opacity不透明度示例'),
       ),
-      body: new Center(
-        child: new Opacity(
+      body: Center(
+        child: Opacity(
           opacity: 0.3, //不透明度设置为0.3
-          child: new Container(
+          child: Container(
             width: 250.0,
             height: 100.0,
-            decoration: new BoxDecoration(
+            //添加装饰器
+            decoration: BoxDecoration(
               color: Colors.black, //背景色设置为纯黑
             ),
             child: Text(
@@ -32,9 +33,9 @@ class LayoutDemo extends StatelessWidget {
 
 void main() {
   runApp(
-    new MaterialApp(
+    MaterialApp(
       title: 'Opacity不透明度示例',
-      home: new LayoutDemo(),
+      home: LayoutDemo(),
     ),
   );
 }

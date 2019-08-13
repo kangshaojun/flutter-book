@@ -3,19 +3,19 @@ import 'package:flutter/material.dart';
 class LayoutDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: new AppBar(
-        title: new Text('BoxDecoration装饰盒子-边框阴影示例'),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('BoxDecoration装饰盒子-边框阴影示例'),
       ),
-      body: new Center(
+      body: Center(
         child: Container(
           width: 300.0,
           height: 300.0,
           decoration: BoxDecoration(
             color: Colors.white,
-            //边框阴影效果
+            //边框阴影效果 可添加多个BoxShadow 是一种组合效果
             boxShadow: <BoxShadow>[
-              new BoxShadow(
+              BoxShadow(
                 color: Colors.grey, //阴影颜色
                 blurRadius: 8.0, //模糊值
                 spreadRadius: 8.0, //扩展阴影半径
@@ -38,9 +38,9 @@ class LayoutDemo extends StatelessWidget {
 
 void main() {
   runApp(
-    new MaterialApp(
+    MaterialApp(
       title: 'BoxDecoration装饰盒子-边框阴影示例',
-      home: new LayoutDemo(),
+      home: LayoutDemo(),
     ),
   );
 }

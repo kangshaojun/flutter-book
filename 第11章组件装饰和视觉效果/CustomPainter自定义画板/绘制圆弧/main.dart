@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'dart:ui';
 
-void main() => runApp(new MyApp());
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
+    return MaterialApp(
       title: 'CustomPaint绘制圆弧示例',
       home: Scaffold(
         appBar: AppBar(
@@ -17,12 +17,12 @@ class MyApp extends StatelessWidget {
         ),
         body: Center(
             child: SizedBox(
-          width: 500.0,
-          height: 500.0,
-          child: CustomPaint(
-            painter: LinePainter(),
-          ),
-        )),
+              width: 500.0,
+              height: 500.0,
+              child: CustomPaint(
+                painter: LinePainter(),
+              ),
+            )),
       ),
     );
   }
@@ -31,14 +31,14 @@ class MyApp extends StatelessWidget {
 //继承于CustomPainter并且实现CustomPainter里面的paint和shouldRepaint方法
 class LinePainter extends CustomPainter {
   //定义画笔
-  Paint _paint = new Paint()
+  Paint _paint = Paint()
     ..color = Colors.grey
     ..strokeCap = StrokeCap.round
     ..isAntiAlias = true
     ..strokeWidth = 2.0//画笔粗细
     ..style = PaintingStyle.stroke; //用于绘制点时PaintingStyle值无效
 
-  ///重写绘制内容方法
+  //重写绘制内容方法
   @override
   void paint(Canvas canvas, Size size) {
     //绘制圆弧
@@ -52,7 +52,7 @@ class LinePainter extends CustomPainter {
     canvas.drawArc(rect2, 0.0, PI, true, _paint);
   }
 
-  ///是否需要重绘
+  //是否需要重绘
   @override
   bool shouldRepaint(CustomPainter oldDelegate) {
     return false;

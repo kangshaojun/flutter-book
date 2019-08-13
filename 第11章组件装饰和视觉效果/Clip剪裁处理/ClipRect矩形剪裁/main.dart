@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(new MyApp());
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
+    return MaterialApp(
       title: 'ClipRect矩形剪裁示例',
       home: Scaffold(
         appBar: AppBar(
@@ -15,12 +15,13 @@ class MyApp extends StatelessWidget {
           ),
         ),
         body: Center(
-          child: new ClipRect(
-            clipper: new RectClipper(),//指定自定义Clipper
-            child:new SizedBox(
+          child: ClipRect(
+            //指定自定义Clipper
+            clipper: RectClipper(),
+            child: SizedBox(
               width: 300.0,
               height:300.0,
-              child:  new Image.asset("images/8.jpeg",fit: BoxFit.fill,),
+              child: Image.asset("images/8.jpeg",fit: BoxFit.fill,),
             ) ,
           ),
         ),
@@ -35,7 +36,7 @@ class RectClipper extends CustomClipper<Rect>{
   //重写获取剪裁范围
   @override
   Rect getClip(Size size) {
-    return new Rect.fromLTRB(100.0, 100.0, size.width - 100.0,  size.height- 100.0);
+    return Rect.fromLTRB(100.0, 100.0, size.width - 100.0,  size.height- 100.0);
   }
 
   //重写是否重新剪裁

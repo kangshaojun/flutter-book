@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(new MyApp());
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
+    return MaterialApp(
       title: 'ClipRRect圆角矩形剪裁示例',
       home: Scaffold(
         appBar: AppBar(
@@ -15,13 +15,16 @@ class MyApp extends StatelessWidget {
           ),
         ),
         body: Center(
-          child: new ClipRRect(
-            borderRadius: new BorderRadius.all(
-                new Radius.circular(30.0)),//圆角弧度，值越大弧度越大
-            child: new SizedBox(
+          //圆角矩形
+          child: ClipRRect(
+            borderRadius: BorderRadius.all(
+                //圆角弧度，值越大弧度越大
+                Radius.circular(30.0)),
+            //固定大小
+            child: SizedBox(
               width: 300.0,
               height: 300.0,
-              child: new Image.asset(
+              child: Image.asset(
                 "images/8.jpeg",
                 fit: BoxFit.fill,
               ),

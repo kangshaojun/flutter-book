@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'dart:math';
 
 void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
+    return MaterialApp(
       title: 'CustomPaint绘制嵌套矩形示例',
       home: Scaffold(
         appBar: AppBar(
@@ -16,13 +15,13 @@ class MyApp extends StatelessWidget {
           ),
         ),
         body: Center(
-          child: SizedBox(
-            width: 500.0,
+            child: SizedBox(
+              width: 500.0,
               height: 500.0,
               child: CustomPaint(
                 painter: LinePainter(),
               ),
-          )
+            )
         ),
       ),
     );
@@ -33,7 +32,7 @@ class MyApp extends StatelessWidget {
 class LinePainter extends CustomPainter {
 
   //定义画笔
-  Paint _paint = new Paint()
+  Paint _paint = Paint()
     ..color = Colors.grey
     ..strokeCap = StrokeCap.square
     ..isAntiAlias = true
@@ -53,19 +52,9 @@ class LinePainter extends CustomPainter {
     canvas.drawDRRect(outer, inner, _paint);
   }
 
-  ///是否需要重绘
+  //是否需要重绘
   @override
   bool shouldRepaint(CustomPainter oldDelegate) {
     return false;
   }
 }
-
-
-
-
-
-
-
-
-
-

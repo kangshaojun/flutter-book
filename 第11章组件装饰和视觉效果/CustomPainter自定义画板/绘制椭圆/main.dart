@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'dart:math';
 
-void main() => runApp(new MyApp());
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
+    return MaterialApp(
       title: 'CustomPaint绘制椭圆示例',
       home: Scaffold(
         appBar: AppBar(
@@ -16,9 +15,8 @@ class MyApp extends StatelessWidget {
           ),
         ),
         body: Center(
-
-          child: SizedBox(
-            width: 500.0,
+            child: SizedBox(
+              width: 500.0,
               height: 500.0,
               child: CustomPaint(
                 painter: LinePainter(),
@@ -33,7 +31,7 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
               ),
-          )
+            )
         ),
       ),
     );
@@ -44,7 +42,7 @@ class MyApp extends StatelessWidget {
 class LinePainter extends CustomPainter {
 
   //定义画笔
-  Paint _paint = new Paint()
+  Paint _paint = Paint()
     ..color = Colors.grey
     ..strokeCap = StrokeCap.square
     ..isAntiAlias = true
@@ -66,13 +64,3 @@ class LinePainter extends CustomPainter {
     return false;
   }
 }
-
-
-
-
-
-
-
-
-
-
