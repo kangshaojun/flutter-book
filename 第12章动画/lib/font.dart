@@ -19,7 +19,7 @@ class _FontAnimation extends State<FontAnimation> with SingleTickerProviderState
      * duration:动画执行的时间 单位是毫秒
      * vsync:防止动画离屏之后继续消耗资源
      */
-    controller = AnimationController(duration: const Duration(milliseconds: 20000), vsync: this);
+    controller = AnimationController(duration: const Duration(milliseconds: 2000), vsync: this);
     /*创建补间对象*/
     tween = Tween(begin: 0.0, end: 1.0)
         .animate(controller)//返回Animation对象

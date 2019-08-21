@@ -17,7 +17,7 @@ class _ValueAnimationState extends State<ValueAnimation> with TickerProviderStat
   void initState() {
     super.initState();
     //创建动画控制器 时长设置为1秒
-    controller = AnimationController(duration: const Duration(milliseconds: 10000), vsync: this);
+    controller = AnimationController(duration: const Duration(milliseconds: 1000), vsync: this);
     //创建非线性动画 让数字在切换时有一种动感
     final Animation curve = CurvedAnimation(parent: controller, curve: Curves.easeOut);
     //创建整型补间对象 产生从0到10的数字
