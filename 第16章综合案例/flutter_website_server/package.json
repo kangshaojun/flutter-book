@@ -1,0 +1,26 @@
+{
+    "name": "flutter_node_server",
+    "version": "0.0.1",
+    "description": "后端测试数据",
+    "scripts": {
+        "start": "node app.js",
+        "precommit": "lint-staged"
+    },
+    "lint-staged": {
+        "*.js": [
+            "prettier --write",
+            "git add"
+        ]
+    },
+    "keywords": [
+        "node",
+        "shop"
+    ],
+    "author": "kevin kang",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.16.3",
+        "request": "^2.85.0",
+        "socket.io": "^2.0.3"
+    }
+}
