@@ -1,0 +1,41 @@
+name: flutter_website
+description: A new Flutter application.
+version: 1.0.0+1
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  #轮播图
+  flutter_swiper: 1.1.4
+  #网络请求库
+  dio: ^2.0.7
+  #状态管理
+  provider: ^3.0.0+1
+  #刷新加载数据
+  flutter_easyrefresh: ^1.2.7
+  #企业级路由
+  fluro: ^1.4.0
+  #加载html数据
+  flutter_html: ^0.9.6
+  #日期格式化
+  date_format: ^1.0.6
+  #websocket处理
+  web_socket_channel: ^1.0.12
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+  #启动加载图
+  - assets/images/loading.jpeg
+  #轮播图片
+  - assets/images/banners/1.jpeg
+  - assets/images/banners/2.jpeg
+  - assets/images/banners/3.jpeg
+  - assets/images/banners/4.jpeg
