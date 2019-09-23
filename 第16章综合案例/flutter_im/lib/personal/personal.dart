@@ -42,7 +42,7 @@ class Personal extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          '帐号 yixiu',
+                          '账号 yixiu',
                           style: TextStyle(
                             fontSize: 14.0,
                             color: Color(0xFFa9a9a9),
