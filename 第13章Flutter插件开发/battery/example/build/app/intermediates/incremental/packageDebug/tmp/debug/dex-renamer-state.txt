@@ -1,0 +1,4 @@
+#Mon Sep 23 22:39:52 CST 2019
+base.0=/Users/ksj/Desktop/battery/example/build/app/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex

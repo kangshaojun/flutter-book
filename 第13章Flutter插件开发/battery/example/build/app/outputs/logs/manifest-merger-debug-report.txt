@@ -1,0 +1,76 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml:1:1-19:12
+INJECTED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml:1:1-19:12
+INJECTED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml:1:1-19:12
+INJECTED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml:1:1-19:12
+MERGED from [:battery] /Users/ksj/Desktop/battery/example/build/battery/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+INJECTED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml:1:1-19:12
+INJECTED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml:1:1-19:12
+INJECTED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml:1:1-19:12
+	package
+		ADDED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml:2:5-48
+		INJECTED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml:1:1-19:12
+		INJECTED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml:1:1-19:12
+		INJECTED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml:4:5-66
+	android:name
+		ADDED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml:4:22-64
+application
+ADDED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml:6:5-18:19
+	android:label
+		ADDED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml:6:67-98
+	android:icon
+		ADDED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml:6:99-133
+	android:name
+		ADDED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml:6:18-66
+activity#io.flutter.plugins.batteryexample.MainActivity
+ADDED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml:7:9-17:20
+	android:launchMode
+		ADDED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml:8:19-49
+	android:hardwareAccelerated
+		ADDED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml:11:19-53
+	android:windowSoftInputMode
+		ADDED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml:12:19-61
+	android:configChanges
+		ADDED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml:10:19-112
+	android:theme
+		ADDED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml:9:19-72
+	android:name
+		ADDED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml:7:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml:13:13-16:29
+action#android.intent.action.MAIN
+ADDED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml:14:17-68
+	android:name
+		ADDED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml:15:17-76
+	android:name
+		ADDED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml:15:27-74
+uses-sdk
+INJECTED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml
+MERGED from [:battery] /Users/ksj/Desktop/battery/example/build/battery/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:battery] /Users/ksj/Desktop/battery/example/build/battery/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+INJECTED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ksj/Desktop/battery/example/android/app/src/main/AndroidManifest.xml

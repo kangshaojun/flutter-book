@@ -1,0 +1,26 @@
+#插件名称
+name: battery
+description: A new Flutter plugin.
+version: 0.0.1
+author:
+homepage:
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    #Android包名
+    androidPackage: io.flutter.plugins.battery
+    #iOS前缀
+    iosPrefix: FLT
+    #插件类名
+    pluginClass: BatteryPlugin

@@ -1,0 +1,1 @@
+../../../../.symlinks/plugins/battery/ios/Classes/BatteryPlugin.h

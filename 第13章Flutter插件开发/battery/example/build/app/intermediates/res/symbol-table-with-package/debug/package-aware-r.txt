@@ -1,0 +1,2 @@
+io.flutter.plugins.batteryexample
+mipmap ic_launcher
