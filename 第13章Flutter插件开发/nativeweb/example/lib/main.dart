@@ -43,6 +43,6 @@ class _MyAppState extends State<MyApp> {
   //执行网页加载动作
   void onWebCreated(webController){
     this.webController = webController;
-    this.webController.loadUrl("https://github.com/");
+    this.webController.loadUrl("http://github.com/");
   }
 }
