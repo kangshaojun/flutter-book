@@ -41,9 +41,9 @@ class GoodModel{
   //商品图片
   String image;
   //原价
-  double oriPrice;
+  int oriPrice;
   //现有价格
-  double presentPrice;
+  int presentPrice;
   //商品名称
   String name;
   //商品Id
@@ -74,5 +74,3 @@ class GoodModel{
   }
 
 }
-
-

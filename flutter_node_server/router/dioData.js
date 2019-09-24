@@ -21,54 +21,54 @@ router.post("/",urlencodedParser,(req,res) => {
         "message":"success",
         "data":[
             {
-                "name": "法国代购新款江疏影同款翻领修身中长裙春夏印花连衣裙",
+                "name": "苹果 屏幕尺寸： 13.3英寸 处理器： Intel Core i5-8259",
                 "image": base_url + "001/cover.jpg",
-                "presentPrice": 98.88,
+                "presentPrice": 13999,
                 "goodsId": "001",
-                "oriPrice": 108.88
+                "oriPrice": 15999
             }, {
-                "name": "柔美而精致~高贵而优雅~圆领金银丝春季毛衣羊毛开衫女短款白外套",
+                "name": "外星人alienware 全新m15 R2九代酷睿i7六核GTX1660Ti独显144Hz吃鸡游戏笔记本电脑戴尔DELL15M-R4725",
                 "image": base_url + "002/cover.jpg",
-                "presentPrice": 229.90,
+                "presentPrice": 19999,
                 "goodsId": "002",
-                "oriPrice": 320.99
+                "oriPrice": 23999
             }, {
-                "name": "明星同款高端西服2019春装新款韩版英伦风短款格子小西装女外套潮",
+                "name": "Dell/戴尔 灵越15(3568) Ins15E-3525独显i5游戏本超薄笔记本电脑",
                 "image": base_url + "003/cover.jpg",
-                "presentPrice": 318.88,
+                "presentPrice": 6600,
                 "goodsId": "003",
-                "oriPrice": 388.88
+                "oriPrice": 8999
             }, {
-                "name": "复古廓形机车进口绵羊皮衣真皮外套女E142",
+                "name": "联想ThinkPad E480 14英寸超薄轻薄便携官方旗舰店官网正品IBM全新办公用 商务大学生手提笔记本电脑E470新款",
                 "image": base_url + "004/cover.jpg",
-                "presentPrice": 238.99,
+                "presentPrice": 5699,
                 "goodsId": "004",
-                "oriPrice": 248.99
+                "oriPrice": 7800
             }, {
-                "name": "单排扣高腰牛仔裤女春夏薄款紧身弹力小脚裤显瘦百搭网红浅色长裤",
+                "name": "苹果 屏幕尺寸： 13.3英寸 处理器： Intel Core i5-8259",
                 "image": base_url + "005/cover.jpg",
-                "presentPrice": 588.99,
+                "presentPrice": 13999,
                 "goodsId": "005",
-                "oriPrice": 888.88
+                "oriPrice": 15999
             }, {
-                "name": "MIUCO女装夏季重工星星烫钻圆领短袖宽松显瘦百搭T恤上衣k",
+                "name": "外星人alienware 全新m15 R2九代酷睿i7六核GTX1660Ti独显144Hz吃鸡游戏笔记本电脑戴尔DELL15M-R4725",
                 "image": base_url + "006/cover.jpg",
-                "presentPrice": 1028.88,
+                "presentPrice": 19999,
                 "goodsId": "006",
-                "oriPrice": 1888.88
+                "oriPrice": 23999
             }, 
             {
-                "name": "春夏一步裙包臀裙开叉弹力修身显瘦短裙黑色高腰职业半身裙",
+                "name": "Dell/戴尔 灵越15(3568) Ins15E-3525独显i5游戏本超薄笔记本电脑",
                 "image": base_url + "007/cover.jpg",
-                "presentPrice": 2388.66,
+                "presentPrice": 6600,
                 "goodsId": "007",
-                "oriPrice": 2888.88
+                "oriPrice": 8999
             }, {
-                "name": "夏季新款短袖圆领紧身小黑超短裙开叉包臀性感连衣裙夜店女装",
+                "name": "联想ThinkPad E480 14英寸超薄轻薄便携官方旗舰店官网正品IBM全新办公用 商务大学生手提笔记本电脑E470新款",
                 "image": base_url + "008/cover.jpg",
-                "presentPrice": 666.88,
+                "presentPrice": 5699,
                 "goodsId": "008",
-                "oriPrice": 888.88
+                "oriPrice": 7800
             },
         ]
     };
