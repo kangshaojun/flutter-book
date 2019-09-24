@@ -23,11 +23,13 @@ class _MyAppState extends State<MyApp> {
   //获取底层的方法是异步的 所以调用的方法也要异步处理才行
   Future<void> initPlatformState() async {
     String platformVersion;
-    //底层方法有可能会调用失败 所以要使用try/catch语句
+    //底层方法有可能会调用失败 所以要使用try on catch语句
     try {
       platformVersion = await FlutterPluginDemo.platformVersion;
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
+    } catch (e){
+      print('Exception: $e');
     }
 
     setState(() {
