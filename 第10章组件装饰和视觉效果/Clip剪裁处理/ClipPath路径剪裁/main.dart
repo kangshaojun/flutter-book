@@ -35,9 +35,12 @@ class TriangleCliper extends CustomClipper<Path>{
   @override
   Path getClip(Size size) {
     Path path = Path();
-    path.moveTo(50.0,50.0);//起始点
-    path.lineTo(50.0,10.0);//终止点
-    path.lineTo(100.0,50.0);//起始点(50,10),终止点
+    //移动至起始点(50.0,50.0)
+    path.moveTo(50.0,50.0);
+    //开始画线 起始点(50.0,50.0) 终止点(50.0,10.0)
+    path.lineTo(50.0,10.0);
+    //开始画线 起始点(50.0,10.0) 终止点(100.0,50.0)
+    path.lineTo(100.0,50.0);
     path.close();//使这些点构成三角形
     return path;
   }

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
-    title: 'Table表格布局示例',
+    title: 'Table布局示例',
     home: MyApp(),
   ));
 }
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Table表格布局示例'),
+        title: Text('Table布局示例'),
       ),
       //表格居中
       body: Center(

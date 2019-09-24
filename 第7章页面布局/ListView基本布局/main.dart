@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         //标题
         title: Text('广州市黄埔大道建中路店',style: TextStyle(fontWeight: FontWeight.w400,fontSize: 18.0),),
         //子标题
-        subtitle: Text('广州市福黄埔大道建中路3号'),
+        subtitle: Text('广州市黄埔大道建中路3号'),
         //左侧图标
         leading: Icon(
           Icons.fastfood,

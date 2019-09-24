@@ -84,7 +84,7 @@ class PersistentDemoState extends State<PersistentDemo> {
               TextField(
                 controller: controller,
                 decoration: InputDecoration(
-                  labelText: '呢称:',
+                  labelText: '昵称:',
                   hintText: '请输入名称',
                 ),
               ),
