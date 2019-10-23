@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(
   MaterialApp(
-    title: 'Container布局容器示例',
+    title: 'Container容器布局示例',
     home: LayoutDemo(),
   ),
 );
@@ -89,7 +89,7 @@ class LayoutDemo extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Container布局容器示例'),
+        title: Text('Container容器布局示例'),
       ),
       body: container,
     );

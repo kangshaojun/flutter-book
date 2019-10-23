@@ -16,11 +16,11 @@ class MyApp extends StatelessWidget {
           child: RaisedButton(
             onPressed: () {
               //指定url并发起请求
-              const url = 'https://www.baidu.com';
+              const url = 'https://github.com';
               //调用url_launcher包里的launch方法
               launch(url);
             },
-            child: Text('打开百度'),
+            child: Text('打开GitHub'),
           ),
         ),
       ),
