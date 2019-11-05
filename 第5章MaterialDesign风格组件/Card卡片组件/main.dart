@@ -22,10 +22,10 @@ class MyApp extends StatelessWidget {
             ListTile(
               //标题
               title: Text(
-                '深圳市南山区深南大道35号',style: TextStyle(fontWeight: FontWeight.w300),
+                '深圳市南山区深南大道',style: TextStyle(fontWeight: FontWeight.w300),
               ),
               //子标题
-              subtitle: Text('创想科技有限公司'),
+              subtitle: Text('XX有限公司'),
               //左侧图标
               leading: Icon(
                 Icons.home,
@@ -36,9 +36,9 @@ class MyApp extends StatelessWidget {
             Divider(),
             ListTile(
               title: Text(
-                '深圳市罗湖区沿海大道32号',style: TextStyle(fontWeight: FontWeight.w300),
+                '深圳市罗湖区沿海大道',style: TextStyle(fontWeight: FontWeight.w300),
               ),
-              subtitle: Text('一木培训机构'),
+              subtitle: Text('XX培训机构'),
               leading: Icon(
                 Icons.school,
                 color: Colors.lightBlue,
