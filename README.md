@@ -1,5 +1,6 @@
 # flutter-book
-Flutter从入门到精通视频教程：https://ke.qq.com/course/package/16132?tuin=10ea64b9
+Flutter入门与实战图书同步配套视频教程
+https://ke.qq.com/course/453083?tuin=10ea64b9
 
 # 如何使用
 
@@ -9,7 +10,7 @@ Flutter从入门到精通视频教程：https://ke.qq.com/course/package/16132?t
 
 3. 拷贝每个示例的main.dart pubspec.yaml及资源文件至示例工程对应目录
 
-4. 执行flutter packages get后，运行项目即可。
+4. 执行flutter packages get后，运行项目即可
 
 
 # 作者简介
