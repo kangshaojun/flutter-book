@@ -1,5 +1,5 @@
 # flutter-book
-Flutter入门与实战图书同步配套视频教程
+Flutter入门与实战(第2版)图书同步配套视频教程
 https://ke.qq.com/course/453083?tuin=10ea64b9
 
 # 如何使用
@@ -25,7 +25,7 @@ QQ:283796665
 微信:kangshaojun888
 
 # 图书封面
-<img src="https://raw.githubusercontent.com/kangshaojun/flutter-book/master/screenshots/book_cover_2.png"/>
+<img src="https://raw.githubusercontent.com/kangshaojun/flutter-book/master/screenshots/book_cover_2.jpeg"/>
 
 # 图书海报
 <img src="https://raw.githubusercontent.com/kangshaojun/flutter-book/master/screenshots/book_ad_2.jpeg"/>
