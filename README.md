@@ -16,7 +16,7 @@ https://ke.qq.com/course/453083?tuin=10ea64b9
 # 作者简介
 资深开发者，创业者。专注于视频通讯技术领域。国内首本Flutter著作《Flutter技术入门与实战》作者。多年从事视频会议、远程教育等技术研发，对于Android、iOS以及跨平台开发技术有比较深入的研究和应用，作为主要程序员开发了多个应用项目，涉及医疗、交通、银行等领域。
 
-Flutter技术入门与实战: https://item.jd.com/12526484.html  
+Flutter技术入门与实战: https://item.jd.com/12600153.html  
 Flutter交流学习群：894109159  
 Flutter开源项目请关注: https://github.com/kangshaojun  
 
@@ -25,9 +25,9 @@ QQ:283796665
 微信:kangshaojun888
 
 # 图书封面
-<img src="https://raw.githubusercontent.com/kangshaojun/flutter-book/master/screenshots/book_cover.png"/>
+<img src="https://raw.githubusercontent.com/kangshaojun/flutter-book/master/screenshots/book_cover_2.png"/>
 
 # 图书海报
-<img src="https://raw.githubusercontent.com/kangshaojun/flutter-book/master/screenshots/book_ad.jpeg"/>
+<img src="https://raw.githubusercontent.com/kangshaojun/flutter-book/master/screenshots/book_ad_2.jpeg"/>
 
 
