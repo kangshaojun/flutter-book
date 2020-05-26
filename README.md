@@ -1,14 +1,5 @@
 # flutter-book
-Flutter+Dart入门与实战套餐(全) https://ke.qq.com/course/package/23972?tuin=2c77f7f0<br>
-
-Flutter基础教程 https://ke.qq.com/course/515987?tuin=2c77f7f0<br>
-Flutter高级教程 https://ke.qq.com/course/518848?tuin=2c77f7f0<br>
-Flutter实战案例 https://ke.qq.com/course/576887?tuin=2c77f7f0<br>
-
-Dart基础教程 https://ke.qq.com/course/513743?tuin=2c77f7f0<br>
-Dart高级教程 https://ke.qq.com/course/554150?tuin=2c77f7f0<br>
-Dart商城案例 https://ke.qq.com/course/482529?tuin=2c77f7f0<br>
-
+Flutter入门与实战套餐 https://ke.qq.com/course/package/23970?tuin=2c77f7f0<br>
 
 # 如何使用
 
