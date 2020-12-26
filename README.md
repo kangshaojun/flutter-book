@@ -17,7 +17,7 @@ Flutter+Dart入门与实战套餐(全) https://ke.qq.com/course/package/23970?tu
 展翼科技联合创始人。专注于视频通讯技术领域。国内首本Flutter著作《Flutter技术入门与实战》作者,另著有《Dart语言实战》及《WebRTC音视频开发》等书籍。多年从事视频会议、远程教育等技术研发，对于Android、iOS以及跨平台开发技术有比较深入的研究和应用，作为主要程序员开发了多个应用项目，涉及医疗、交通、银行等领域。
 
 Flutter技术入门与实战第2版: 需要作者亲笔签书籍可加微信：kangshaojun888  
-Flutter交流学习群：1046954554  
+Flutter交流学习群：425778886  
 Flutter开源项目请关注: https://github.com/kangshaojun  
 
 
