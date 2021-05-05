@@ -30,6 +30,7 @@ class _ValueAnimationState extends State<ValueAnimation> with TickerProviderStat
           Navigator.pop(context);
         }
       });
+    controller.forward();
   }
 
   @override
