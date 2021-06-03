@@ -1,5 +1,6 @@
 # flutter-book
-Flutter+Dart入门与实战套餐(全) https://ke.qq.com/course/package/23970?tuin=2c77f7f0<br>
+[Flutter系列课程请点击这里](www.kangshaojun.com)
+<br>
 
 # 如何使用
 
