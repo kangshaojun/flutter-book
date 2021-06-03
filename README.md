@@ -1,5 +1,5 @@
 # flutter-book
-[Flutter系列课程请点击这里](www.kangshaojun.com)
+[Flutter视频教程请点击这里](http://www.kangshaojun.com/)
 <br>
 
 # 如何使用
