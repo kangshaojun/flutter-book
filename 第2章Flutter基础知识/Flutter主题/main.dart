@@ -47,7 +47,7 @@ class MyHomePage extends StatelessWidget {
           child: Text(
             '带有背景颜色的文本组件',
             //获取主题的文本样式
-            style: Theme.of(context).textTheme.title,
+            style: Theme.of(context).textTheme.bodyText1,
           ),
         ),
       ),
