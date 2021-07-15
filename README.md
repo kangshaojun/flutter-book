@@ -1,5 +1,8 @@
 # flutter-book
-[Flutter视频教程请点击这里](http://www.kangshaojun.com/)
+Flutter 基础 高级 商城案例 插件开发等课程请关注<br>
+国内:[https://flutter.ke.qq.com](https://flutter.ke.qq.com/)<br>
+海外:[https://kangshaojun.podia.com](https://kangshaojun.podia.com/)<br>
+我的站点:[www.kangshaojun.com](http://www.kangshaojun.com)<br>
 <br>
 
 # 如何使用
