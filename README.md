@@ -1,9 +1,7 @@
 # flutter-book
 Flutter 基础 高级 商城案例 插件开发等课程请关注<br>
-- 国内站点:[https://flutter.ke.qq.com](https://flutter.ke.qq.com)
-- 海外站点:[https://kangshaojun.podia.com](https://kangshaojun.podia.com)
-- 我的站点:[http://www.kangshaojun.com](http://www.kangshaojun.com)
-
+[https://www.kangshaojun.com](https://www.kangshaojun.com)<br>
+[![](https://www.kangshaojun.com/images/study.png)](https://www.kangshaojun.com/posts/courses/)
 <br>
 
 # 如何使用
