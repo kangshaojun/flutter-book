@@ -19,7 +19,7 @@
     "author": "kevin kang",
     "license": "MIT",
     "dependencies": {
-        "express": "^4.16.3",
+        "express": "^4.17.3",
         "request": "^2.85.0",
         "socket.io": "^2.0.3"
     }
